@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill Graph</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f5f5f5;
+      padding: 2rem;
+    }
+
+    .skills-container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-title {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      background: #333;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      height: 24px;
+    }
+
+    .skill-fill {
+      height: 100%;
+      width: 0;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #6a5acd, #8a2be2);
+      box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+      transition: width 1.5s ease-in-out;
+    }
+
+    .percentage-label {
+      position: absolute;
+      right: 10px;
+      top: 2px;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="skills-container">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+      <div class="skill-title">Blender</div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="90"><span class="percentage-label">90%</span></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Unity</div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="80"><span class="percentage-label">80%</span></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Photoshop</div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="85"><span class="percentage-label">85%</span></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">C#</div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="75"><span class="percentage-label">75%</span></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">3D Animation</div>
+      <div class="skill-bar">
+        <div class="skill-fill" data-percent="88"><span class="percentage-label">88%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animate bars on load
+    window.addEventListener("load", () => {
+      const fills = document.querySelectorAll(".skill-fill");
+      fills.forEach(fill => {
+        const percent = fill.getAttribute("data-percent");
+        fill.style.width = percent + "%";
+      });
+    });
+  </script>
+
+</body>
+</html>

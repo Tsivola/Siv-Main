@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+
+}
+
+.product{
+    flex-grow: -1;
+}
+
+.gallery2{
+
+}
+.gallery2 video{
+
+}
+.gallery2 img{
+
+}
+
+.details{
+
+}
+
+.details h1{
+
+}
+
