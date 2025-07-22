@@ -1,10 +1,799 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://www.sivstudios.org" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected, <a href="https://www.sivstudios.org">click here</a>.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SivolaStudio.org</title>
+    <link rel="stylesheet" href="NavBarstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    
+
+</head>
+<body> 
+
+    <header>
+        <div class="logo"><span>S</span>iv Studio's</div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <section id="home" class="home">
+        <div class="home-content ">
+            <h1>Hi! I'm Trenton Sivola</h1>
+            <div class="change-text">
+                <h3>And I'm a</h3>
+                <h3>
+                    <span class="word">3D Modeler</span>
+                    <span class="word">UX/UI Developer</span>
+                    <span class="word">Web Developer</span>
+                    <span class="word">Graphic Designer</span>
+                </h3>
+            </div>
+            <p>a passionate designer specializing in turning ideas into immersive, high-quality visuals for the past <span>4 years</span>. Explore my work and see how I can help transform your vision into a stunning experience. Let’s create something amazing together!</p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email:</h5>
+                    <span>trent.sivola26@gmail.com</span>
+                </div>
+                <div class="behance-info">
+                    <h5>Freelancer:</h5>
+                    <a href="https://www.upwork.com/nx/search/talent/details/~010c244d03a946c306/profile?q=Trenton&page=2&pageTitle=Profile&_modalInfo=%5B%7B%22navType%22%3A%22slider%22,%22title%22%3A%22Profile%22,%22modalId%22%3A%221743005381494%22%7D%5D"><span>www.Upwork</span></a>
+                </div>
+            </div>
+
+
+            <div class="btn1-box">
+
+            <a href="#contact"><button class="cta-button">Contact Me</button></a>
+            <a href="#contact"><button class="cta-button">Book a Consultation</button></a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.upwork.com/nx/search/talent/details/~010c244d03a946c306/profile?q=Trenton&page=2&pageTitle=Profile&_modalInfo=%5B%7B%22navType%22%3A%22slider%22,%22title%22%3A%22Profile%22,%22modalId%22%3A%221743005381494%22%7D%5D"><i class='bx bxl-upwork' ></i></a>
+                <a href="https://www.linkedin.com/in/trent-sivola-8b562b366/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+        </div>
+
+        <div class="home-image">
+            <div class="img-box">
+                <img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708739/IMG_0842_hese54.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="about" class="about">
+        <div class="img-about ">
+            <img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708739/IMG_0842_hese54.jpg" alt="">
+            <div class="info-about1">
+                <span>5+ years</span>
+                <p1>of Experience</p1>
+            </div>
+
+            <div class="info-about2">
+                <span>5+ years</span>
+                <p1>Projects & Animations </p1>
+            </div>
+
+            <div class="info-about3">
+                <span>2+ years</span>
+                <p1>Cliental Mangement</p1>
+            </div>
+        </div>
+
+       <style>
+
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about-content span {
+      font-size: 18px;
+      color: #666;
+    }
+
+ 
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .icon-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px auto 20px;
+      flex-wrap: wrap;
+    }
+
+    .icon-box {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    box-icon {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+      fill: #6d28d9;
+    }
+
+    box-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .icon-label {
+      margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fdfdfd;
+    font-size: 16px;
+    }
+
+    .info-container {
+      margin-top: 30px;
+      min-height: 150px;
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info {
+      width: 100%;
+      padding: 25px;
+      background-color: #4f5153;
+      box-shadow: var(--neon-box-shadow);
+      border-radius: 10px;
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      color: #1e1e1e;
+    }
+
+    .info.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+  <section class="about-content">
+    <span>Let me introduce myself</span>
+    <h2 style="margin: 11px; margin-top: 26px;">About Me</h2>
+
+    <div class="icon-section">
+      <div class="icon-box" onclick="toggleInfo('info1')">
+      <i class='bx bx-user service-icon'></i>
+        <div class="icon-label">About Me</div>
+      </div>
+      <div class="icon-box" onclick="toggleInfo('info2')">
+       <i class='bx bxs-bullseye service-icon' ></i>
+        <div class="icon-label">My Development</div>
+      </div>
+      <div class="icon-box" onclick="toggleInfo('info3')">
+      <i class='bx bx-bar-chart-alt service-icon'></i>
+        <div class="icon-label">Mission Statement</div>
+      </div>
+    </div>
+
+    <div class="info-container">
+      <div class="info" id="info1">
+        <p>
+          I’m a versatile 3D designer and creative professional with a passion for blending art, technology, and user-centered design. With expertise spanning across 3D modeling, game design, UX/UI design, coding, and interactive analytics, I specialize in crafting interactive, immersive experiences that not only look great but also perform seamlessly. My goal is to bring your ideas to life through engaging 3D visuals, intuitive user interfaces, and smart, data-driven solutions. Whether you need stunning game assets, responsive designs, or custom-coded features, I work closely with clients to ensure every detail aligns with their vision. With a unique mix of creativity and technical skills, I’m committed to delivering high-quality work that enhances user experience and drives results. Outside of my professional pursuits, I enjoy [insert a hobby or personal interest], which keeps me inspired and grounded.
+        </p>
+      </div>
+
+      <div class="info" id="info2">
+        <p>
+          My journey in development has been a continuous learning experience. From building my first website to creating intricate 3D models, I’ve embraced every challenge as an opportunity to grow. I’m constantly exploring new tools, frameworks, and techniques to stay ahead in the ever-evolving tech landscape. Collaboration and feedback have been key to my growth, and I’m always eager to work with others who share my enthusiasm for innovation. My goal is to not only improve my technical skills but also to develop solutions that are user-friendly, visually appealing, and impactful. Over time, I’ve expanded my expertise to include game design, UX/UI principles, and data-driven analytics, allowing me to create holistic experiences that resonate with users.
+        </p>
+      </div>
+
+      <div class="info" id="info3">
+        <p>
+          My mission is to create meaningful and engaging digital experiences that inspire and connect people. I believe in the power of technology to solve problems, tell stories, and bring ideas to life. Whether it’s through a well-designed website, a captivating 3D visualization, or a thoughtful brainstorming session, I aim to deliver work that is both functional and beautiful. I’m committed to continuous improvement, ethical practices, and making a positive impact through my craft. Every project I take on is an opportunity to contribute something valuable to the world, and I strive to ensure that my work not only meets but exceeds expectations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleInfo(id) {
+      const infoBoxes = document.querySelectorAll('.info');
+      infoBoxes.forEach((box) => {
+        if (box.id === id) {
+          if (box.classList.contains('show')) {
+            box.classList.remove('show');
+            setTimeout(() => (box.style.display = 'none'), 600);
+          } else {
+            infoBoxes.forEach(b => {
+              b.classList.remove('show');
+              b.style.display = 'none';
+            });
+            box.style.display = 'block';
+            setTimeout(() => box.classList.add('show'), 10);
+          }
+        } else {
+          box.classList.remove('show');
+          setTimeout(() => (box.style.display = 'none'), 600);
+        }
+      });
+    }
+  </script>
+
+    </section>
+
+<section>
+    <style>
+
+    #services {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+    }
+    .service-card {
+        background-color: #292e33;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem 1.5rem 1.5rem;
+      transform: translateY(0);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      background-color: #12f7ff;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .service-summary {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .service-details {
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(18,247,255,0.4);
+    }
+    .service-card:hover .service-details {
+      max-height: 500px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (min-width: 768px) {
+      .services-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .services-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+  <section id="services">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon-circle">🎨</div>
+        <h2>Graphic Design</h2>
+        <p class="service-summary">Visual branding, logos, posters, and more.</p>
+        <div class="service-details">
+          <ul>
+           <span><li>Logo & Branding</li></span>
+           <span><li>Social Media Graphics</li></span>
+            <span><li>Print Media</li></span>
+            <span><li>Adobe Photoshop & Illustrator</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-circle">💻</div>
+        <h2>Website Design</h2>
+        <p class="service-summary">Custom layouts, responsive builds, full deployment.</p>
+        <div class="service-details">
+          <ul>
+            <span><li>HTML, CSS, JavaScript</li></span>
+            <span><li>Responsive Layouts</li></span>
+            <span><li>Portfolio & Business Sites</li></span>
+            <span><li>SEO & Performance</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-circle">🧭</div>
+        <h2>UI/UX Design</h2>
+        <p class="service-summary">Wireframes, user journeys, accessibility checks.</p>
+        <div class="service-details">
+          <ul>
+            <span><li>Figma / Adobe XD</li></span>
+            <span><li>User Testing</li></span>
+            <span><li>Component Design</li></span>
+            <span><li>Interactive Prototyping</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-circle">🏛️</div>
+        <h2>Architectural Viz</h2>
+        <p class="service-summary">Modeling, rendering, and walkthroughs.</p>
+        <div class="service-details">
+          <ul>
+            <span><li>3D Floor Plans</li></span>
+            <span><li>Interior/Exterior Renders</li></span>
+            <span><li>Blender & SketchUp</li></span>
+            <span><li>Animation Flythroughs</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-circle">🎮</div>
+        <h2>Game Asset Design</h2>
+        <p class="service-summary">Stylized & realistic game models, props, textures.</p>
+        <div class="service-details">
+          <ul>
+            <span><li>Low/High Poly Models</li></span>
+            <span><li>UV Mapping</li></span>
+            <span><li>Texture Baking</li></span>
+            <span><li>Unity & Unreal Integration</li></span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="icon-circle">📱</div>
+        <h2>Mobile App Development</h2>
+        <p class="service-summary">Designing and building cross-platform mobile apps.</p>
+        <div class="service-details">
+          <ul>
+            <span><li>iOS & Android</li></span>
+            <span><li>React Native / Flutter</li></span>
+            <span><li>User Authentication</li></span>
+            <span><li>API Integration</li></span>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+       <style>
+   
+
+   
+
+    .skills-container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-title {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      background: #333;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      height: 24px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-fill {
+      height: 100%;
+      width: 0;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 10px;
+      color: #fff;
+      font-size: 0.85rem;
+      transition: width 1.5s ease-in-out;
+    }
+
+    .technical {
+      background: linear-gradient(90deg, #6a5acd, #8a2be2);
+      box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+    }
+
+    .professional {
+      background: linear-gradient(90deg, #12f7ff, #20c997);
+      box-shadow: 0 0 10px rgba(18, 247, 255, 0.5);
+    }
+
+    .skill-description {
+      max-height: 0;
+      overflow: hidden;
+      font-size: 0.9rem;
+      margin-top: 6px;
+      padding-left: 10px;
+      color: #ccc;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+    }
+
+    .skill:hover .skill-description {
+      max-height: 100px;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="skills-container">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+      <div class="skill-title">Blender</div>
+      <div class="skill-bar">
+        <div class="skill-fill technical" data-percent="90">90%</div>
+      </div>
+      <div class="skill-description">Experienced in creating 3D models, textures, and animations for both product design and game assets using Blender.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Unity</div>
+      <div class="skill-bar">
+        <div class="skill-fill technical" data-percent="80">80%</div>
+      </div>
+      <div class="skill-description">Built interactive environments and integrated C# scripts for real-time applications and game mechanics.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Photoshop</div>
+      <div class="skill-bar">
+        <div class="skill-fill technical" data-percent="85">85%</div>
+      </div>
+      <div class="skill-description">Used for UI/UX mockups, texture creation, concept art, and professional branding materials.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">C#</div>
+      <div class="skill-bar">
+        <div class="skill-fill technical" data-percent="75">75%</div>
+      </div>
+      <div class="skill-description">Proficient in building logic systems and game mechanics for Unity-based development using C#.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">3D Animation</div>
+      <div class="skill-bar">
+        <div class="skill-fill technical" data-percent="88">88%</div>
+      </div>
+      <div class="skill-description">Skilled in rigging, keyframe animation, and camera sequencing for engaging 3D visuals.</div>
+    </div>
+
+    <h2>Professional Skills</h2>
+
+    <div class="skill">
+      <div class="skill-title">Time Management</div>
+      <div class="skill-bar">
+        <div class="skill-fill professional" data-percent="92">92%</div>
+      </div>
+      <div class="skill-description">Efficient in balancing freelance work, development projects, and delivery deadlines consistently.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Communication</div>
+      <div class="skill-bar">
+        <div class="skill-fill professional" data-percent="85">85%</div>
+      </div>
+      <div class="skill-description">Clear and professional communication with clients, team members, and collaborators.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Problem Solving</div>
+      <div class="skill-bar">
+        <div class="skill-fill professional" data-percent="80">80%</div>
+      </div>
+      <div class="skill-description">Analytical thinker able to troubleshoot 3D pipelines, game logic issues, and software bugs quickly.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Adaptability</div>
+      <div class="skill-bar">
+        <div class="skill-fill professional" data-percent="75">75%</div>
+      </div>
+      <div class="skill-description">Eager to learn new tools and workflows, adapt to different client needs, and pivot projects when needed.</div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">Client Collaboration</div>
+      <div class="skill-bar">
+        <div class="skill-fill professional" data-percent="87">87%</div>
+      </div>
+      <div class="skill-description">Skilled in receiving and incorporating feedback to meet or exceed project expectations.</div>
+    </div>
+  </div>
+
+  <script>
+    // Animate bars on page load
+    window.addEventListener("load", () => {
+      const fills = document.querySelectorAll(".skill-fill");
+      fills.forEach(fill => {
+        const percent = fill.getAttribute("data-percent");
+        fill.style.width = percent + "%";
+      });
+    });
+  </script>
+
+
+
+    </section>
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="main-text">
+            <span>What I will do for you</span>
+            <h2>Latest Projects</h2>
+        </div>
+
+    
+        <div class="portfolio-gallery">
+            <style>
+                * { box-sizing: border-box; }
+                body { font-family: Arial, sans-serif; margin: 0; text-align: center; }
+                .slideshow-container { position: relative; max-width: 800px; margin: auto; overflow: hidden; box-shadow: var(--neon-box-shadow); }
+                .slide { display: none; width: 100%; opacity: 0; transition: opacity 1s ease-in-out; box-shadow: var(--neon-box-shadow); }
+                .slide img, .slide video { width: 100%; height: auto; }
+                .prev, .next {
+                    position: absolute; top: 50%; transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5); color: white;
+                    border: none; padding: 10px; cursor: pointer;
+                }
+                .prev { left: 10px; }
+                .next { right: 10px; }
+                .thumbnail-container { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+                .thumbnail { margin: 5px; cursor: pointer; width: 150px;     box-shadow: var(--neon-box-shadow); }
+                .thumbnail img, .thumbnail video { width: 150px; height: auto; }
+            </style>
+    
+            <div class="slideshow-container">
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752860320/BarberShop001Test_eqts8b.jpg" alt="Image 1"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752708710/0001-0180_g1ljcd.mp4" controls loop></video></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635828/0001-0080_zfvyn3.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725185/Test002CannonFire_queejq_e_improve_p2fwzk.png" alt="image"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635620/Test001CannonFire_r7cp0g.png" alt="Image 1"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635621/Test003CannonFire_rmqklg.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635623/TestCannon002_dnzyn1.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635623/TestCannon003_w73s9n.png" alt="Image 2"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877276/0001-0060_y6lmss_1_urnpvs.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752861712/untitled_ffau8e.png" alt="Image 1"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877337/0001-0120_-_Copy_acgt0d.mp4" controls loop></video></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752708705/0001-0055_ev50lv.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752862159/0038_uyhszp.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752636930/Necklace2FView_c9r0l0_e_improve_e_sharpen_love2k_e_improve_vugfxu.png" alt="image"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635829/0001-0160_aifljt.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725186/VTOLSampleStill_1_m7ukdu_e_improve_wydqb8.png" alt="Image 2"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877341/0001-0120_ememjb.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708713/0102_u7v8ry.jpg" alt="Image 2"></div>
+                <div class="slide"><video><source src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877345/0001-0306_mwgpxe_up5sfb.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752708741/InteriorTest1_forpv3.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752708742/InteriorTest2_poqffu.png" alt="Image 2"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635868/0001-0250_-_Trim_2_g7fbhl.mp4" controls loop></video></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752863337/0001-0251_1_bsw2iv.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752729066/Screenshot_2023-11-20_093747_emlfzn.png" alt="image"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877349/0094-0225_za1itj_ruhmuy.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708737/City001-Side2_okfl7p.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708740/City001Sunrise_js5x09.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725183/Ruins001_t2iykb_e_improve_xsqrdr.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725182/Ruins003_lfjzh2_e_improve_lab8ak.png" alt="image 2"></div>
+                <div class="slide"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635893/TSDissolveAnim_fwys17.mp4" controls loop></video></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708798/TSFrontBusinessCard_tww9il.png" alt="Image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708716/BasicShip_1_zgrrxf.png" alt="image1"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725181/marineSQ_2_ftlt7l_e_improve_repton.png" alt="image 2"></div>
+                <div class="slide"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752635398/MarineCharacterIM001_heosmb.png" alt="image 2"></div>
+                
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        
+            <div class="thumbnail-container">
+                <div class="thumbnail" onclick="setSlide(0)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752860320/BarberShop001Test_eqts8b.jpg" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(1)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752708710/0001-0180_g1ljcd.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(2)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635828/0001-0080_zfvyn3.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(3)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725185/Test002CannonFire_queejq_e_improve_p2fwzk.png" alt="image"></div>
+                <div class="thumbnail" onclick="setSlide(4)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635620/Test001CannonFire_r7cp0g.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(5)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635621/Test003CannonFire_rmqklg.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(6)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635623/TestCannon002_dnzyn1.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(7)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752635623/TestCannon003_w73s9n.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(8)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877276/0001-0060_y6lmss_1_urnpvs.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(9)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752861712/untitled_ffau8e.png"></img></div>
+                <div class="thumbnail" onclick="setSlide(10)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877337/0001-0120_-_Copy_acgt0d.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(11)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752708705/0001-0055_ev50lv.mp4" ></video></div>
+                <div class="thumbnail" onclick="setSlide(12)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752862159/0038_uyhszp.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(13)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752636930/Necklace2FView_c9r0l0_e_improve_e_sharpen_love2k_e_improve_vugfxu.png" alt="image"></div>
+                <div class="thumbnail" onclick="setSlide(14)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635829/0001-0160_aifljt.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(15)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725186/VTOLSampleStill_1_m7ukdu_e_improve_wydqb8.png" alt="image 1"></div>
+                <div class="thumbnail" onclick="setSlide(16)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877341/0001-0120_ememjb.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(17)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708713/0102_u7v8ry.jpg" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(18)"><video><source src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877345/0001-0306_mwgpxe_up5sfb.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(19)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752708741/InteriorTest1_forpv3.png" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(20)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752708742/InteriorTest2_poqffu.png" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(21)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635868/0001-0250_-_Trim_2_g7fbhl.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(22)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752863337/0001-0251_1_bsw2iv.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(23)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752729066/Screenshot_2023-11-20_093747_emlfzn.png" alt="image"></div>
+                <div class="thumbnail" onclick="setSlide(24)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752877349/0094-0225_za1itj_ruhmuy.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(25)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708737/City001-Side2_okfl7p.png" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(26)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708740/City001Sunrise_js5x09.png" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(27)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725183/Ruins001_t2iykb_e_improve_xsqrdr.png" alt="Image 1"></div>
+                <div class="thumbnail" onclick="setSlide(28)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725182/Ruins003_lfjzh2_e_improve_lab8ak.png" alt="Image `1"></div>
+                <div class="thumbnail" onclick="setSlide(29)"><video src="https://res.cloudinary.com/diyykecqa/video/upload/v1752635893/TSDissolveAnim_fwys17.mp4" loop></video></div>
+                <div class="thumbnail" onclick="setSlide(30)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708798/TSFrontBusinessCard_tww9il.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(31)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752708716/BasicShip_1_zgrrxf.png" alt="Image 2"></div>
+                <div class="thumbnail" onclick="setSlide(32)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/v1752725181/marineSQ_2_ftlt7l_e_improve_repton.png" alt="image 1"></div>
+                <div class="thumbnail" onclick="setSlide(33)"><img src="https://res.cloudinary.com/diyykecqa/image/upload/e_improve,e_sharpen/v1752635398/MarineCharacterIM001_heosmb.png" alt="image 2"></div>
+            </div>
+           <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    let autoplayInterval;
+
+    // Initialize slideshow
+    showSlide(slideIndex);
+    startAutoplay();
+
+    function showSlide(index) {
+        // Loop slide index if out of bounds
+        if (index >= slides.length) slideIndex = 0;
+        else if (index < 0) slideIndex = slides.length - 1;
+        else slideIndex = index;
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[i].style.opacity = "0";
+        }
+
+        // Show the current slide
+        slides[slideIndex].style.display = "block";
+        setTimeout(() => {
+            slides[slideIndex].style.opacity = "1";
+        }, 100);
+    }
+
+    function changeSlide(n) {
+        stopAutoplay();
+        showSlide(slideIndex + n);
+        startAutoplay(); // restart autoplay after manual navigation
+    }
+
+    function setSlide(n) {
+        stopAutoplay();
+        showSlide(n);
+        scrollToSlideshow();
+        startAutoplay(); // restart autoplay after manual selection
+    }
+
+    function scrollToSlideshow() {
+        const slideshow = document.querySelector('.slideshow-container');
+        slideshow.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(() => {
+            showSlide(slideIndex + 1);
+        }, 15000); // 15 seconds per slide
+    }
+
+    function stopAutoplay() {
+        clearInterval(autoplayInterval);
+    }
+</script>
+
+    </section>
+    
+
+
+
+
+    <section id="contact" class="contant">
+        <div class="main-text">
+            <span>ask me question</span>
+            <h3>Contact Me</h3>
+        </div>
+
+       <form action="https://formsubmit.co/sivstudiosinquires@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+ <button class="cta-button">Send</button>
+
+  <!-- Optional: spam protection -->
+  <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="thank-you.html">
+</form>
+
+        
+    </section>
+
+
+    <footer>
+        <p>Copyright &copy; 2024 by || All Right Reserved.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  
+
+</body>
 </html>
