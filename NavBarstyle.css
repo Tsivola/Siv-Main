@@ -214,7 +214,7 @@ section{
 }
 
 .change-text h3 .word{
-  position: absolute;
+  position: unset;
   display: inline-flex;
   opacity: 0;
 }
@@ -1384,4 +1384,3 @@ footer a i{
     height: auto;
   }
 }
-
