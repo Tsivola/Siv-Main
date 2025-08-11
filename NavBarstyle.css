@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +45,7 @@
   background: var(--hover-color);
   border-radius: 5rem;
 }
+
 
 
 
@@ -183,9 +183,12 @@ section{
 
 
 
-.home-content p{
-  color: #bdbdbd;
-  line-height: 1.6;
+.home-content {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .h4{
@@ -196,16 +199,17 @@ section{
   font-size: 10vh;
 }
 
-.change-text{
-  font: size 1.5em;
+.change-text {
+  font-size: 1.5em;   /* was 'font: size 1.5em;' */
   font-weight: 600;
 }
 
-.change-text h3{
-  display: table-cell;
-  margin: 1px;
-  font-size: 40px;
+.change-text h3 {
+  display: inline-grid;           /* not table-cell */
+  margin: 1px 0;
+  font-size: clamp(24px, 6vw, 40px);
   vertical-align: top;
+  position: relative;              /* anchor for children if you animate them */
 }
 
 .change-text h3 .word{
@@ -214,7 +218,7 @@ section{
   opacity: 0;
 }
 
-.change-text-h3 .word .letter{
+.change-text h3 .word .letter {
   transform-origin: center center 25px;
 }
 
@@ -230,6 +234,20 @@ section{
 .change-text h3 .word .letter.behind{
   transform: rotateX(-90deg);
 }
+
+/* 4) On mobile, keep words in normal flow so they don't push layout */
+@media (max-width: 600px) {
+  .change-text h3 .word {
+    position: static !important;   /* no absolute on tiny screens */
+    display: inline !important;
+    opacity: 1 !important;
+    transform: none !important;
+    white-space: normal !important;
+  }
+}
+
+html, body { overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; display: block; }
 
 .info-box{
   display: inline-flex;
@@ -1346,4 +1364,22 @@ footer a i{
     font-size: 1rem;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .container, .section, .gallery, .service-box {
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portfolio-gallery, .service-box {
+    flex-wrap: wrap;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
 }
